@@ -1,0 +1,99 @@
+[[04/10/2018 01:29:18 AM]] Internal Server Error: /created/output/out.svg
+Traceback (most recent call last):
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 16, in create
+    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 16, in <listcomp>
+    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+TypeError: object of type 'NoneType' has no len()
+[[04/10/2018 01:31:49 AM]] Not Found: /output/out.svg
+[[04/10/2018 01:32:50 AM]] Not Found: /output/out.svg
+[[04/10/2018 01:34:27 AM]] Internal Server Error: /created/out.svg
+Traceback (most recent call last):
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 16, in create
+    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 16, in <listcomp>
+    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+TypeError: object of type 'NoneType' has no len()
+[[04/10/2018 01:34:38 AM]] Internal Server Error: /created/out.svg
+Traceback (most recent call last):
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 16, in create
+    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 16, in <listcomp>
+    biases = .2*np.flip(np.cumsum([len(i) == 0 for i in lines]), 0)
+TypeError: object of type 'NoneType' has no len()
+[[04/10/2018 01:39:18 AM]] Internal Server Error: /created/
+Traceback (most recent call last):
+  File "C:\anaconda3\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\anaconda3\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\anaconda3\lib\site-packages\django\template\engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: output/out.svg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\anaconda3\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Raj Maurya\Desktop\dh\digital_handwriting\handwriting\views.py", line 25, in create
+    return render(request,'created.html')
+  File "C:\anaconda3\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\anaconda3\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\anaconda3\lib\site-packages\django\template\backends\django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "C:\anaconda3\lib\site-packages\django\template\backends\django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "C:\anaconda3\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\anaconda3\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\anaconda3\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\anaconda3\lib\site-packages\django\template\loader_tags.py", line 204, in render
+    template = context.template.engine.get_template(template_name)
+  File "C:\anaconda3\lib\site-packages\django\template\engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\anaconda3\lib\site-packages\django\template\engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: output/out.svg

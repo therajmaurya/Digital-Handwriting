@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>text | hand_writing</title>
+  </head>
+  <style media="screen">
+    form{
+      margin-top: 5%;
+    }
+    h1{
+      text-align: center;
+    }
+
+  </style>
+  <body>
+    <br><br>
+    <h1>Digital Handwriting!!</h1>
+    <center>
+    <form action="{% url 'create' %}" method="GET">
+              {% csrf_token %}
+              <input type="Textarea" name="sentence" id="sentence"><br><br>
+              <input type="submit" name="submit" value="Generate">
+          </form>
+        </center>
+  </body>
+</html>

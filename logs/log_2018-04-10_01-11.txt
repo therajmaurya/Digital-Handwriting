@@ -1,0 +1,35 @@
+[[04/10/2018 01:11:26 AM]] Internal Server Error: /created/
+Traceback (most recent call last):
+  File "C:\Users\SRIJAN\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\SRIJAN\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\SRIJAN\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\handwriting\views.py", line 18, in create
+    hand = Hand()
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\demo.py", line 37, in __init__
+    attention_mixture_components=10
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\rnn.py", line 85, in __init__
+    super(rnn, self).__init__(**kwargs)
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\tf_base_model.py", line 108, in __init__
+    self.graph = self.build_graph()
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\tf_base_model.py", line 399, in build_graph
+    self.loss = self.calculate_loss()
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\rnn.py", line 204, in calculate_loss
+    lambda: self.sample(cell)
+  File "C:\Users\SRIJAN\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow\python\util\deprecation.py", line 432, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\SRIJAN\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow\python\ops\control_flow_ops.py", line 2047, in cond
+    orig_res_t, res_t = context_t.BuildCondBranch(true_fn)
+  File "C:\Users\SRIJAN\AppData\Local\Programs\Python\Python36\lib\site-packages\tensorflow\python\ops\control_flow_ops.py", line 1897, in BuildCondBranch
+    original_result = fn()
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\rnn.py", line 203, in <lambda>
+    lambda: self.primed_sample(cell),
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\rnn.py", line 162, in primed_sample
+    scope='rnn'
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\rnn_ops.py", line 246, in rnn_free_run
+    states, outputs, final_state = raw_rnn(cell, loop_fn, scope=scope)
+  File "C:\Users\SRIJAN\Desktop\dh\digital_handwriting\rnn_ops.py", line 40, in raw_rnn
+    if context.in_graph_mode():
+AttributeError: module 'tensorflow.python.eager.context' has no attribute 'in_graph_mode'
